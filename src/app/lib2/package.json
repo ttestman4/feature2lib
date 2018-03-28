@@ -4,7 +4,7 @@
     "repository": "https://github.com/ttestman4/feature2lib",
     "author": "ttestman4 <ttestman4@gmail.com>",
     "license": "MIT",
-    "private": true,
+    "private": false,
     "peerDependencies": {
       "@angular/core": "^5.0.0",
       "@angular/common": "^5.0.0"
