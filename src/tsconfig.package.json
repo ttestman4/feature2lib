@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.json",
+  "angularCompilerOptions": {
+    "paths": {
+      "@ttestman4/lib2": [ "../dist/@ttestman4/lib2" ]
+    }
+  },
+  "compilerOptions": {
+    "paths": {
+      "@ttestman4/lib2": [ "../dist/@ttestman4/lib2" ]
+    }
+  }
+}

@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { Lib2Module } from './lib2/lib2.module';
+import { Lib2Module } from '@ttestman4/lib2';
 
 
 @NgModule({

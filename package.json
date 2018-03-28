@@ -11,7 +11,9 @@
     "e2e": "ng e2e",
     "dev": "lite-server --baseDir='dist'",
     "devreload": "concurrently \"npm run build -- -sm true --watch\" \"npm run dev\" ",
-    "release": "npm run lint && npm run build -- --base-href \"/feature2lib/\" && npm run test -- --single-run --no-progress --browser=ChromeNoSandbox && npm run e2e -- --no-progress --config=protractor-ci.conf.js"
+    "release": "npm run lint && npm run build:lib && npm run build -- --base-href \"/feature2lib/\" && npm run test -- --single-run --no-progress --browser=ChromeNoSandbox && npm run e2e -- --no-progress --config=protractor-ci.conf.js",
+    "build:app": "npm run build:lib && npm run build",
+    "build:lib": "rimraf dist && ng-packagr -p src/app/lib2/package.json"
   },
   "private": false,
   "dependencies": {
@@ -52,6 +54,7 @@
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "lite-server": "^2.3.0",
+    "ng-packagr": "^2.4.1",
     "protractor": "~5.1.2",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
