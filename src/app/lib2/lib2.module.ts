@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { Lib2RoutingModule } from './lib2-routing.module';
 import { Sample2Component } from './sample2/sample2.component';
+export { childRoutes } from './lib2-routing.module';
 
 @NgModule({
   imports: [
