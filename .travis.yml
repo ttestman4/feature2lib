@@ -29,6 +29,15 @@ deploy:
   on:
     branch: master
 
+deploy:
+  provider: npm
+  skip-cleanup: true
+  email: "ttestman4@gmail.com"
+  api_key: "$NPM_TOKEN"
+  tag: next
+  on:
+    branch: master
+
 script:
   # Use Chromium instead of Chrome.
   - export CHROME_BIN=chromium-browser
