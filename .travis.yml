@@ -29,16 +29,16 @@ deploy:
   on:
     branch: master
 
-deploy:
-  provider: npm
-  skip-cleanup: true
-  email: "ttestman4@gmail.com"
-  api_key: "$NPM_TOKEN"
-  verbose: true
-  tag: next
-  local-dir: dist/@ttestman4/lib2.tgz
-  on:
-    branch: master
+# deploy:
+#   provider: npm
+#   skip-cleanup: true
+#   email: "ttestman4@gmail.com"
+#   api_key: "$NPM_TOKEN"
+#   verbose: true
+#   tag: next
+#   local-dir: dist/@ttestman4/lib2.tgz
+#   on:
+#     branch: master
 
 script:
   # Use Chromium instead of Chrome.
