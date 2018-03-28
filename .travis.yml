@@ -34,7 +34,7 @@ deploy:
   skip-cleanup: true
   email: "ttestman4@gmail.com"
   api_key: "$NPM_TOKEN"
-  tag: next
+# tag: next
   on:
     branch: master
 
